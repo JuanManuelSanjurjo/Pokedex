@@ -8,7 +8,6 @@ function Sidebar({setSidebar}) {
     }
 }
 
-
   return (
     <div className='sidebar' id='sidebar' onClick={closeSidbar}>
           <h2 className='sidebarTitle '>Popular links </h2>
