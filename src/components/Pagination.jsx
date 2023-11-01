@@ -55,10 +55,10 @@ function Pagination({setCurrentPage, goToNextPage,  goToPrevPage, setPokemons, s
   
   return (
     <div className='paginationContainer'>
-        <a href=''><img className="headerImg" title="Home" src="/Pokédex_logo.png"></img></a>    
+        <a href=''><img className="headerImg" title="Home" src="./Pokédex_logo.png"></img></a>    
         <div className='searchContainer'>  
           <input  className='searchBar' type='text' placeholder={'Search Pokemon name or id'} onChange={(e)=> inputSearch(e)} onKeyDown={handleEnter} />  
-          <img   className="searchImg" src='\magnifying-glass-solid.svg' onClick={input ? searchPokemon : null}></img>
+          <img   className="searchImg" src='./magnifying-glass-solid.svg' onClick={input ? searchPokemon : null}></img>
           <div className='searchTooltip'>Search</div>
           {searching && <span style={{color: "antiquewhite", fontWeight: 600, marginLeft: "25px", letterSpacing: "0.05rem"}}> Searching...</span>}
         </div>
