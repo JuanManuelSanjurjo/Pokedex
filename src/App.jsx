@@ -6,6 +6,9 @@ import PokemonInfo from "./components/PokemonInfo"
 import Loading from "./components/Loading";
 import SearchError from "./components/SearchError";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
 
 function App() {
   const [pokemons, setPokemons] = useState();
@@ -78,16 +81,23 @@ function App() {
   }
 
   return (
-    <>
-      
-      <div id="app">
-        <Pagination special={special} setSpecial={setSpecial} setSearchError={setSearchError} searchError={searchError} setCurrentPage={setCurrentPage} goToNextPage={nextPage ? goToNextPage : null }   goToPrevPage={prevPage ? goToPrevPage : null} setPokemons={setPokemons}  setCurrentPokemon={setCurrentPokemon}   />
-        {!searchError && <PokemonList pokemons={pokemons} setPokemons={setPokemons}  special={special} setSpecial={setSpecial}  setCurrentPokemon={setCurrentPokemon} currentPokemon={currentPokemon}/> }
-        {currentPokemon && <PokemonInfo  pokeInfo={currentPokemon}  special={special} setSpecial={setSpecial}/>}
-        {searchError && <SearchError setSearchError={setSearchError} />}
-      </div>
-      <Footer />
-      </>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/Pokedex/" element={
+       <>
+          <div id="app">
+            <Pagination special={special} setSpecial={setSpecial} setSearchError={setSearchError} searchError={searchError} setCurrentPage={setCurrentPage} goToNextPage={nextPage ? goToNextPage : null }   goToPrevPage={prevPage ? goToPrevPage : null} setPokemons={setPokemons}  setCurrentPokemon={setCurrentPokemon}   />
+            {!searchError && <PokemonList pokemons={pokemons} setPokemons={setPokemons}  special={special} setSpecial={setSpecial}  setCurrentPokemon={setCurrentPokemon} currentPokemon={currentPokemon}/> }
+            {currentPokemon && <PokemonInfo  pokeInfo={currentPokemon}  special={special} setSpecial={setSpecial}/>}
+            {searchError && <SearchError setSearchError={setSearchError} />}
+          </div>
+          <Footer />
+       </>
+      }/>
+      <Route path="/Pokedex/About" element={<About/>}/>
+
+      </Routes>
+      </BrowserRouter>
   )
 }
 

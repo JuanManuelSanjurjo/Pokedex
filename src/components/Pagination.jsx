@@ -63,7 +63,8 @@ function Pagination({setCurrentPage, goToNextPage,  goToPrevPage, setPokemons, s
           {searching && <span style={{color: "antiquewhite", fontWeight: 600, marginLeft: "25px", letterSpacing: "0.05rem"}}> Searching...</span>}
         </div>
 
-        <nav>
+{/*  A DESARROLLAR nav con mas funcionalidad */}
+        {/* <nav>
           <div>  
             <a href=''>About</a>
           </div>
@@ -86,7 +87,7 @@ function Pagination({setCurrentPage, goToNextPage,  goToPrevPage, setPokemons, s
           <div style={{cursor: "pointer"}} onClick={changeTheme}>
             Theme
           </div>
-        </nav>
+        </nav> */}
 
         <div className='pageButtons'>
             {goToPrevPage && !searchError && <button className="pageBtn" onClick={goToPrevPage}>Prev </button>}
