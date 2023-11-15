@@ -5,7 +5,7 @@ import Footer from './Footer'
 function About() {
   return (
     <>
-        <div className='paginationContainer'style={{maxHeight:"7vh"}} >
+        <div className='paginationContainer'style={{maxHeight:"8vh"}} >
             <Link to={`/Pokedex/`} >
                 <img className="headerImg" title="Home" src="./Pokédex_logo.png"></img>  
             </Link>

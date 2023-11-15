@@ -831,7 +831,7 @@ nav div ul li:hover{
   position:static;
   bottom: 0%;
   height:  8vh;
-  width: 100%;
+  /* width: 100%; */
   color: var(--beige);
   letter-spacing: 0.03rem;
   text-shadow: 1px 0 10px var(--textShadow);
@@ -857,7 +857,7 @@ nav div ul li:hover{
 
 
 
-@media (max-width: 640px) {
+@media (max-width: 950px) {
   .aboutSection{
     padding: 20px;
     width: 100%;
@@ -870,13 +870,10 @@ nav div ul li:hover{
   .pokeInfo{
     min-width: 98vw;
   }
-  
   #dialogInfo, #evolutionChain, #abilityDialog{
     transform: translateX(0);
     width: 90%;
-
   }
-
   .infoType{
     padding: 5px 10px;
   }
@@ -885,7 +882,6 @@ nav div ul li:hover{
   }
   .pokeInfo *{
     font-size: 0.9rem;
-
   }
   .paginationContainer{
     grid-template-columns: 1fr;
@@ -894,5 +890,23 @@ nav div ul li:hover{
     padding-inline: 10px ;
     gap: 10px;
   }
+  .searchTooltip{
+    display: none;
+  }
+  .searchContainer{
+    width: fit-content;
+  }
+  .searchContainer:hover, .searchContainer:focus-within {
+    width: initial;
+  }  
+  .paginationContainer .pageBtn {
+    scale: 0.8;
+    gap: 15px;
+  }
+  .cardContainer{
+    margin: auto;
+    padding: 10px;
+  }
+
   
 }
