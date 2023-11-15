@@ -134,7 +134,8 @@ span{
 
 .pokeInfo, .specialsAnimation{
   position: fixed;  
-  width: 35vw;
+  min-width: 620px;
+  width: 40vw;
   overflow: auto;
   background-color: var(--beige);
   text-align: center;
@@ -580,9 +581,7 @@ span{
   justify-content: flex-end;
   gap: 25px;
 }
-.pageButtons{
 
-}
 
 nav{
   color: var(--beige);
@@ -808,9 +807,11 @@ nav div ul li:hover{
   flex-direction: column;
   text-align: center;
   gap: 20px;
-  padding: 100px;
+  padding: 50px;
   /* opacity: 0.9; */
   transition: 0.2s;
+  overflow-y: scroll;
+  
 }
 .aboutSection p{
   color: var(--fairy);
@@ -853,3 +854,45 @@ nav div ul li:hover{
 }
 
 
+
+
+
+@media (max-width: 640px) {
+  .aboutSection{
+    padding: 20px;
+    width: 100%;
+  }
+  .footer{
+    font-size: 0.8rem;
+    padding-inline: 10px;
+    text-align: center;
+  }
+  .pokeInfo{
+    min-width: 98vw;
+  }
+  
+  #dialogInfo, #evolutionChain, #abilityDialog{
+    transform: translateX(0);
+    width: 90%;
+
+  }
+
+  .infoType{
+    padding: 5px 10px;
+  }
+  .infoImage{
+    width: 30%;
+  }
+  .pokeInfo *{
+    font-size: 0.9rem;
+
+  }
+  .paginationContainer{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding-inline: 10px ;
+    gap: 10px;
+  }
+  
+}

@@ -15,7 +15,7 @@ function About() {
 
             <p>This project was created using the PokeAPI, an open-source API for retrieving Pokémon data, as a practice project. The PokeAPI provides comprehensive information about Pokémon species, abilities, moves, and more.</p>
             
-            <p>For more information about the PokeAPI, please visit their official website: <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">https://pokeapi.co/</a></p>
+            <p>For more information about this great API, please visit their official website: <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">https://pokeapi.co/</a></p>
             
             <h2>Project Creator</h2>
             
