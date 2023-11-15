@@ -36,14 +36,15 @@
   --fairy: #ffc0cb;
 
 }
-body, .paginationContainer{
+#app{
+  position: relative;
+}
+.paginationContainer{
   transition: background-color 0.3s;
 }
 
-
 html, body{
   height: 100%;
-
 }
 body{
   margin: 0;
@@ -861,6 +862,7 @@ nav div ul li:hover{
   .aboutSection{
     padding: 20px;
     width: 100%;
+    font-size: 0.8rem;
   }
   .footer{
     font-size: 0.8rem;
@@ -884,10 +886,12 @@ nav div ul li:hover{
     font-size: 0.9rem;
   }
   .paginationContainer{
+    position: sticky;
+    top: 0px;
+    padding: 10px  0;
     grid-template-columns: 1fr;
-    justify-content: center;
     justify-items: center;
-    padding-inline: 10px ;
+    margin-block:0 ;
     gap: 10px;
   }
   .searchTooltip{
@@ -899,6 +903,9 @@ nav div ul li:hover{
   .searchContainer:hover, .searchContainer:focus-within {
     width: initial;
   }  
+  .paginationContainer .pageButtons {
+    gap: 0px;
+  }
   .paginationContainer .pageBtn {
     scale: 0.8;
     gap: 15px;
@@ -906,7 +913,10 @@ nav div ul li:hover{
   .cardContainer{
     margin: auto;
     padding: 10px;
-  }
 
+  }
+  /* .showType{
+    display: none;
+  } */
   
 }
