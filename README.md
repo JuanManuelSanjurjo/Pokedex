@@ -31,7 +31,3 @@ https://juanmanuelsanjurjo.github.io/Pokedex/
 
 
 
-## Demo
-
-Insert gif or link to demo
-
