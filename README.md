@@ -26,8 +26,8 @@ https://juanmanuelsanjurjo.github.io/Pokedex/
 
 ## Screenshots
 
-![App Screenshot]("./poke1.jpg")
-![App Screenshot]("./poke2.jpg")
+![App Screenshot]("poke1.jpg")
+![App Screenshot]("poke2.jpg")
 
 
 
