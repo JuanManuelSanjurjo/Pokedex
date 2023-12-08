@@ -26,12 +26,8 @@ https://juanmanuelsanjurjo.github.io/Pokedex/
 
 ## Screenshots
 
-![App Screenshot]("./poke1.jpg")
-![App Screenshot]("./poke2.jpg")
+![App Screenshot](https://github.com/JuanManuelSanjurjo/Pokedex/blob/main/poke1.jpg)
+![App Screenshot](https://github.com/JuanManuelSanjurjo/Pokedex/blob/main/poke2.jpg)
 
 
-
-## Demo
-
-Insert gif or link to demo
 
