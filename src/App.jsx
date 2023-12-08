@@ -20,7 +20,6 @@ function App() {
   const [searchError, setSearchError] = useState(false);
   const [special, setSpecial] = useState(false)
 
-   
   useEffect(() => {
     setLoading(true)
     const abort = new AbortController;
@@ -62,7 +61,6 @@ function App() {
   //       cancel();
   //   }
   // }, [currentPage])
-
 
   function goToNextPage(){
     setCurrentPage(nextPage)

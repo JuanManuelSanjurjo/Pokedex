@@ -12,7 +12,7 @@ function PokeCard({pokemon, setCurrentPokemon, currentPokemon, special, setSpeci
       if(currentPokemon){
         setPokeImage(currentPokemon.sprites.front_default)
       }
-    },[])
+    },[]) 
 
     useEffect(() => {
          axios.get(pokemon.url)
